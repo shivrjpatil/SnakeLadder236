@@ -35,10 +35,8 @@ namespace SnakeAndLadder
 
                     case Ladder:
                         PlayerPosition += Dice;
-                        if (PlayerPosition < WinningPosition)
-                        {
-                            Console.WriteLine("Player Position = " + PlayerPosition);
-                        }
+                        Console.WriteLine("Player Position = " + PlayerPosition);
+                        
                         break;
                     case Snake:
                         PlayerPosition -= Dice;
