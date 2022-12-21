@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlTypes;
 using System.Linq;
 using System.Media;
 using System.Text;
@@ -11,8 +12,13 @@ namespace SnakeAndLadder
     {
         static void Main(string[] args)
         {
-           int playerPosition=0;
-            Console.WriteLine("lets play! \nPlayerPosition=" +playerPosition);
+           int PlayerPosition=0;
+            Console.WriteLine("lets play! \nPlayerPosition=" +PlayerPosition);
+
+            Random random = new Random();
+            int Dice = random.Next(1, 7);
+            Console.WriteLine("after die rolles the number =" + Dice);
+            
             Console.ReadLine();
         }
     }
